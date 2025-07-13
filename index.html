@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Orbitron:wght@400..900&family=Satisfy&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+    <title>תהילה נגר - תיק עבודות</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="hamburger">&#9776;</label>
+        <ul>
+          <li>
+            <a href="#theTitle">ראשי</a>
+          </li>
+          <li>
+            <a href="#aboutMe">אודות</a>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">גלריה <small>&#x25BC;</small></a>
+            <ul class="dropdown-menu">
+              <li><a href="#container-gallery-landing">גלריית דפי נחיתה</a></li>
+              <li><a href="#container-gallery-games">גלריית משחקים</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contact">צור קשר</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="myName">Tehila Nagar</div>
+      <img src="images/profile-image.png" alt="profile-image" />
+    </header>
+
+    <section id="theTitle">
+      <h1>תיק עבודות</h1>
+      <p>
+        זהו אתר הפורטפוליו שלי המציג את תיק העבודות שלי והטכנולוגיות בהם השתמשתי
+      </p>
+    </section>
+
+    <div id="images">
+      <img src="images/img-NodeJS.png" alt="Node Java Script" />
+      <img src="images/img-React.png" alt="React" />
+      <img src="images/img-API.png" alt="API" />
+      <img src="images/img-TypeScript.png" alt="Type Script" />
+      <img src="images/img-ES6.png" alt="ES6" />
+      <img src="images/img-OOP.png" alt="OOP" />
+      <img src="images/img-JS.png" alt="Java Script" />
+      <img src="images/img-SASS.png" alt="SASS" />
+      <img src="images/img-Bootstrap.png" alt="Bootstrap" />
+      <img src="images/img-CSS.png" alt="CSS" />
+      <img src="images/img-HTML.png" alt="HTML" />
+      <img src="images/img-sweetAlert2.png" alt="SweetAlert2" />
+    </div>
+
+    <section id="aboutMe">
+      <img src="images/profile-image-big.png" alt="profile-image" />
+      <h2>קצת עלי</h2>
+      <p>
+        היי, אני תהילה נגר, בת 20, ומתמחה בתחום פיתוח ההייטק. תמיד עניין אותי
+        איך דברים עובדים מאחורי הקלעים, והתחום הזה מאפשר לי לאתגר את עצמי וליצור
+        פתרונות חדשניים. אני אוהבת ללמוד ולהתפתח, והאתר הזה הוא המקום שבו אני
+        מציגה את העבודות שלי. כל פרויקט שאני עושה הוא הזדמנות לבחון טכנולוגיות
+        חדשות ולשפר את כישורי הפיתוח שלי. בנוסף, אני מאמינה בשילוב של יצירתיות
+        ודיוק בתהליך העבודה, ומביאה את זה לכל פרויקט שאני יוצרת. בעתיד, אני
+        שואפת להמשיך לבנות מוצרים טכנולוגיים שיענו על צרכים שונים וימשיכו להוות
+        חלק מהעשייה שלי. אני תמיד פתוחה לשיתוף פעולה וללמוד מהניסיון של אחרים,
+        ומחפשת את הדרך להמשיך לצמוח ולהתפתח בתחום.
+      </p>
+      <a href="images/resume.pdf" download="resume.pdf">להורדת קורות חיים</a>
+    </section>
+
+    <section class="container-gallery" id="container-gallery-landing">
+      <div class="title-gallery">
+        <h2>דפי נחיתה נבחרים</h2>
+        <p>
+          בואו לגלות את דפי הנחיתה שבניתי. כאן תוכלו לראות דפי נחיתה שנבנו
+          בקפידה, עם דגש על התאמה אישית ויצירתיות.
+        </p>
+      </div>
+
+      <div class="gallery-landing">
+        <div class="card">
+          <img src="images/project1.png" alt="Landing page - Coffee" />
+          <div class="box">
+            <h3>קפה טוב לבוקר טוב</h3>
+            <p>
+              פתחו את הבוקר עם קפה חם – עלינו! ☕✨ הירשמו עכשיו וקבלו קופון
+              לקפה חינם שימלא לכם את היום באנרגיה טובה!
+            </p>
+            <div class="developmentTool">
+              <img src="images/img-HTML.png" alt="HTML" />
+              <img src="images/img-CSS.png" alt="CSS" />
+            </div>
+            <a
+              href="projects HTML CSS/projectName1/transitionPage1.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >לעמוד הפרויקט</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/project2.PNG" alt="Landing page - gifts" />
+          <div class="box">
+            <h3>Here & Now</h3>
+            <p>
+              Here & Now – המתנות השוות מחכות לכם! 🎁 עדכנו אותנו בפרטים וקבלו
+              הפתעה מיוחדת שתשדרג לכם את היום!
+            </p>
+            <div class="developmentTool">
+              <img src="images/img-HTML.png" alt="HTML" />
+              <img src="images/img-CSS.png" alt="CSS" />
+            </div>
+            <a
+              href="projects HTML CSS/projectName2/transitionPage2.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >לעמוד הפרויקט</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/project3.png"
+            alt="Landing page - Let us lead you forward"
+          />
+          <div class="box">
+            <h3>תן לנו להוביל אותך קדימה</h3>
+            <p>
+              העתיד מחכה לך – בוא להיות הראשונים! 🚀🔝 השאר פרטים וקבל גישה
+              מוקדמת להפתעה מיוחדת לפני כולם!
+            </p>
+            <div class="developmentTool">
+              <img src="images/img-HTML.png" alt="HTML" />
+              <img src="images/img-CSS.png" alt="CSS" />
+            </div>
+            <a
+              href="projects HTML CSS/projectName3/transitionPage3.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >לעמוד הפרויקט</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/project4.png"
+            alt="Landing page - Let us lead you forward"
+          />
+          <div class="box">
+            <h3>תן לנו להוביל אותך קדימה</h3>
+            <p>
+              מחפש את הדרך הנכונה להצלחה?🚀✨<br />
+              אני כאן כדי להוביל אותך קדימה! השאר פרטים ואחזור אליך עם הדרך
+              המתאימה ביותר עבורך.
+            </p>
+            <div class="developmentTool">
+              <img src="images/img-HTML.png" alt="HTML" />
+              <img src="images/img-CSS.png" alt="CSS" />
+            </div>
+            <a
+              href="projects HTML CSS/projectName4/transitionPage4.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >לעמוד הפרויקט</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/project5.jpg"
+            alt="Landing page - discover the world"
+          />
+          <div class="box">
+            <h3>לגלות את העולם</h3>
+            <p>
+              גלה את העולם ✈️ 🌍<br />
+              דרך תמונות מהממות והשראה למקום הבא שלך השאר פרטים ותחלום על המסע
+              הבא!
+            </p>
+            <div class="developmentTool">
+              <img src="images/img-HTML.png" alt="HTML" />
+              <img src="images/img-CSS.png" alt="CSS" />
+            </div>
+            <a
+              href="projects HTML CSS/projectName5/transitionPage5.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >לעמוד הפרויקט</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/project6.png"
+            alt="Landing page - Free consultation"
+          />
+          <div class="box">
+            <h3>ייעוץ חינם</h3>
+            <p>
+              ייעוץ חינם מחכה לך! 💬<br />
+              השאר פרטים ומומחה יחזור אליך עם מענה אישי ומקצועי 🧑‍💼
+            </p>
+            <div class="developmentTool">
+              <img src="images/img-HTML.png" alt="HTML" />
+              <img src="images/img-CSS.png" alt="CSS" />
+            </div>
+            <a
+              href="projects HTML CSS/projectName6/transitionPage6.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >לעמוד הפרויקט</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-gallery" id="container-gallery-games">
+      <div class="title-gallery">
+        <h2>משחקים נבחרים</h2>
+        <p>
+          בואו לגלות את המשחקים שיצרתי במיוחד בשבילכם. כאן תוכלו ליהנות ממשחקים
+          אינטראקטיביים, שמשלבים למידה וכיף, עם דגש על חוויית משתמש ועיצוב
+          מוקפד.
+        </p>
+      </div>
+
+      <div class="gallery-games">
+        <a
+          href="projects javaScript/remember-game/transitionPage/transitionPageRememberGame.html"
+          class="game"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="images/memoryGame.jpg"
+            alt="memory game"
+            class="image-game"
+          />
+          <p class="title-game">משחק זיכרון</p>
+        </a>
+        <a
+          href="projects javaScript/project-tic-tac-toe/transitionPage/transitionPageTicTacToe.html"
+          class="game"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="images/ticTacToe.png"
+            alt="tic tac toe"
+            class="image-game"
+          />
+          <p class="title-game">איקס עיגול</p>
+        </a>
+        <a
+          href="projects javaScript/trivia-game/transitionPage/transitionPageTrivia.html"
+          class="game"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/trivia.jpg" alt="trivia" class="image-game" />
+          <p class="title-game">טריוויה</p>
+        </a>
+        <a
+          href="projects javaScript/superOnline/transitionPage/transitionPageSuperOnline.html"
+          class="game"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="images/shoppingCart.jpg"
+            alt="shopping cart"
+            class="image-game"
+          />
+          <p class="title-game">סופר אונליין</p>
+        </a>
+        <a
+          href="projects javaScript/mathGame/transitionPage/transitionPageMathGame.html"
+          class="game"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/mathGame.jpg" alt="math game" class="image-game" />
+          <p class="title-game">לומדת חשבון</p>
+        </a>
+        <a
+          href="projects javaScript/weatherProject/transitionPage/transitionPageWeatherProject.html"
+          class="game"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/weather.jpg" alt="Weather app" class="image-game" />
+          <p class="title-game">אפליקציית מצג האוויר</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-form">
+        <h2>צור קשר</h2>
+        <p>
+          אם יש לך שאלה, בקשה או רעיון לשיתוף פעולה, אני כאן בשבילך. אל תהסס
+          לפנות אליי ואחזור אליך בהקדם עם תשובה או פרטים נוספים.
+        </p>
+
+        <form>
+          <div>
+            <label for="name">שם מלא</label>
+            <input type="text" placeholder="שם מלא" id="name" />
+          </div>
+          <div>
+            <label for="email">דוא״ל</label>
+            <input type="email" placeholder="דוא״ל" id="email" />
+          </div>
+          <div>
+            <label for="phone">טלפון</label>
+            <input type="tel" placeholder="טלפון" id="phone" />
+          </div>
+          <div>
+            <label for="textarea">תוכן ההודעה</label>
+            <textarea id="textarea" placeholder="הודעה"></textarea>
+          </div>
+          <input type="submit" value="שׁליחה" id="btn" />
+        </form>
+      </div>
+      <img src="images/imageContact.png" alt="envelope" />
+    </section>
+
+    <footer>
+      <div id="theIcons">
+        <div class="icon">
+          <img src="images/Icon facebook.svg" alt="Icon facebook" />
+          <h3>#ISRAEL_ISRAELI</h3>
+        </div>
+        <div class="icon">
+          <img src="images/Icon linkedin.svg" alt="Icon linkedin" />
+          <h3>ישראל ישראלי</h3>
+        </div>
+        <div class="icon">
+          <img src="images/Icon phone.svg" alt="Icon phone" />
+          <h3>050.111.1111</h3>
+        </div>
+        <div class="icon">
+          <img src="images/Icon whatsapp.svg" alt="Icon whatsapp" />
+          <h3>050.111.1111</h3>
+        </div>
+        <div class="icon">
+          <img src="images/Icon email.svg" alt="Icon email" />
+          <h3>israeli@gmail.com</h3>
+        </div>
+        <div class="icon">
+          <img src="images/Icon location.svg" alt="Icon location" />
+          <h3>שנקין 5, ת״א</h3>
+        </div>
+      </div>
+
+      <div id="copyright">
+        <h2>Tehila Nagar</h2>
+        <h3>כל הזכויות שמורות</h3>
+      </div>
+    </footer>
+  </body>
+</html>

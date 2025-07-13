@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFFFFF;
+    --color-two: #D31C75;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/backgroundImgPink.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100vw 60vh;
+    background-position: top center;
+}
+
+.container form {
+    padding: 3.8em;
+    width: 32em;
+    height: 34em;
+    background-color: #1A1A1AD4;
+    direction: rtl;
+    margin-top: 5.85em;
+    margin-left: 48em;
+    position: absolute;
+    margin-right: 0px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+    font: normal normal 900 34px/53px Heebo;
+}
+
+p {
+    color: var(--primary-color);
+    margin-bottom: 1.8rem;
+    font: normal normal normal 18.5px/29px Heebo;
+}
+
+label {
+    color: var(--primary-color);
+    font: normal normal bold 16px/24px Heebo;
+    display: block;
+    margin-top: 15px;
+}
+
+
+input[type="text"] {
+    border: 1px solid var(--color-two);
+    height: 2.8em;
+    background-color: var(--primary-color);
+    margin-bottom: 0.6em;
+    width: 100%;
+}
+
+input[type="email"] {
+    border: 1px solid var(--color-two);
+    height: 2.8em;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+input[type="submit"] {
+    color: var(--primary-color);
+    background-color: var(--color-two);
+    height: 2em;
+    width: 9em;
+    border: 0px;
+    margin-top: 2rem;
+    font: normal normal bold 22px/30px Heebo;
+}
+
+@media (max-width:576px) {
+
+    .container {
+        background-size: 100vw 50vh;
+    }
+
+    label {
+        font: normal normal bold 14px/21px Heebo;
+    }
+
+    .container {
+        background-size: 100vw 30vh;
+    }
+
+    .container form {
+        padding: 2em;
+        margin: 11vh 10vw;
+        width: 80vw;
+        height: 70vh;
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        color: var(--primary-color);
+        margin-bottom: 0.5em;
+        font: normal normal 900 25px/30px Heebo;
+        text-align: center;
+        display: block;
+        line-height: 1.5;
+        padding: 0px 10vw;
+    }
+
+
+    p {
+        color: var(--primary-color);
+        margin-bottom: 1.8rem;
+        font: normal normal normal 15px/22px Heebo;
+        text-align: center;
+    }
+
+
+    input[type="text"] {
+        border: 1px solid var(--color-two);
+        height: 4vh;
+        background-color: var(--primary-color);
+        margin-bottom: 0.6em;
+        width: 100%;
+    }
+
+    input[type="email"] {
+        border: 1px solid var(--color-two);
+        height: 4vh;
+        background-color: var(--primary-color);
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        color: var(--primary-color);
+        background-color: var(--color-two);
+        height: 5vh;
+        width: 40%;
+        border: 0px;
+        margin-top: 2rem;
+        font: normal normal bold 15px/20px Heebo;
+    }
+}

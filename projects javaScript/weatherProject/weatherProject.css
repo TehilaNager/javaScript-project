@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(#ff009d7c, #f7960f8e),
+    url(../../images/remember.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f7f3eee0;
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.form-control {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#inputCity {
+  margin-top: 10px;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #4facfe;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #00c3ff;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  background-color: #4facfe;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00c3ff;
+  transform: scale(1.05);
+}
+
+.weatherInfo {
+  margin-top: 20px;
+}
+
+#city {
+  font-size: 2rem;
+  color: #333;
+}
+
+#temp {
+  font-size: 1.8rem;
+  color: #444;
+  margin: 10px 0;
+}
+
+#description {
+  font-style: italic;
+  font-size: 1.7rem;
+  color: #666;
+}
+
+#weatherIcon {
+  width: 120px;
+  height: 120px;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+#weatherIcon:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 20px 25px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 10px 24px;
+  }
+
+  #temp,
+  #description {
+    font-size: 1.4rem;
+  }
+
+  #weatherIcon {
+    width: 90px;
+    height: 90px;
+  }
+}

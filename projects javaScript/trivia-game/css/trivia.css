@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  direction: ltr;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffe29f, #ffa99f);
+  font-family: "Varela Round", sans-serif;
+  color: #333;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+  animation: floatIn 0.6s ease-out;
+  font-size: 1.4rem;
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.8rem;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+h2 {
+  font-weight: 300;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.time,
+.difficulty,
+#category {
+  width: 80%;
+  padding: 8px;
+  font-size: 1.4rem;
+  border: 2px solid #e67e22;
+  border-radius: 16px;
+  background-color: #fff7f0;
+  color: #e67e22;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+label {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+
+hr {
+  margin: 0.3rem auto;
+  width: 80%;
+}
+
+.time:hover,
+.difficulty:hover,
+#category:hover {
+  background-color: #ffe5d0;
+  border-color: #d35400;
+}
+
+.play {
+  display: block;
+  width: 95%;
+  padding: 18px 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6f61, #ff9472);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 6px 14px rgba(255, 111, 97, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  margin: 15px auto;
+}
+
+.play:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 111, 97, 0.6);
+}
+
+.btn-instructions,
+.btn.btn-primary.btn-instructions {
+  background: linear-gradient(90deg, #ff9472, #ff6f61);
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  box-shadow: 0 6px 14px rgba(255, 111, 97, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-instructions:hover,
+.btn.btn-primary.btn-instructions:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 111, 97, 0.5);
+  background: linear-gradient(90deg, #ff826b, #ff705a);
+}
+
+.custom-swal-popup {
+  width: 700px !important;
+  max-width: 90vw;
+  font-family: "Varela Round", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.swal-rtl-content {
+  direction: ltr;
+  text-align: left;
+}
+
+.swal-title-ltr {
+  direction: ltr;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.swal-button-ltr {
+  direction: ltr;
+  text-align: left;
+}
+.swal2-actions {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .play {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+
+  .time,
+  .difficulty,
+  #category {
+    font-size: 1.1rem;
+  }
+  label {
+    font-size: 1.2rem;
+  }
+
+  .btn-instructions {
+    font-size: 1.1rem;
+  }
+}

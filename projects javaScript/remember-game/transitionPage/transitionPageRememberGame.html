@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Suez+One&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./transitionPageRememberGame.css" />
+    <script src="./transitionPageRememberGame.js" defer></script>
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="hamburger">&#9776;</label>
+        <ul>
+          <li>
+            <a href="../../../index.html#theTitle">ראשי</a>
+          </li>
+          <li>
+            <a href="../../../index.html#aboutMe">אודות</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"
+              >גלריה <small>&#x25BC;</small></a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../../index.html#container-gallery-landing"
+                  >גלריית דפי נחיתה</a
+                >
+              </li>
+              <li>
+                <a href="../../../index.html#container-gallery-games"
+                  >גלריית משחקים</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../../index.html#contact">צור קשר</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="../../../index.html">
+        <div id="myName">Tehila Nagar</div>
+        <img src="images/profile-image.png" alt="profile-image" />
+      </a>
+    </header>
+
+    <main>
+      <div id="images">
+        <img src="images/img-CSS.png" alt="CSS" />
+        <img src="images/img-HTML.png" alt="HTML" />
+        <img src="images/img-JS.png" alt="Java Script" />
+        <img src="images/img-API.png" alt="Api" />
+        <img
+          src="images/img-sweetAlert2.png"
+          alt="SweetAlert2"
+          style="padding: 15px"
+        />
+      </div>
+
+      <div class="container">
+        <img src="images/memoryGame.jpg" alt="memory game" class="image-game" />
+
+        <div class="description-game">
+          <h1>משחק זיכרון 🧠🐾</h1>
+          <p>
+            משחק זיכרון מהנה ומעוצב שבו על המשתמש להתאים זוגות של תמונות של חיות
+            מתוך לוח משחק צבעוני ודינמי. בכל התחלה של משחק נשלפות תמונות חדשות
+            באופן אקראי מ-Unsplash, כך שכל משחק הוא חוויה חדשה ובלתי צפויה.
+          </p>
+
+          <p>
+            המשחק כולל אנימציות חלקות של כרטיסים מתהפכים, אפקטים קוליים לתשובות
+            נכונות ושגויות, וחלונות קופצים שמעודדים את השחקן להמשיך לשחק. הממשק
+            כולו בעברית, והוא מותאם לחוויית משתמש נעימה וידידותית.
+          </p>
+
+          <p style="font-weight: bold; margin-top: 10px">
+            המשחק נבנה באמצעות הטכנולוגיות הבאות:
+          </p>
+          <ul>
+            <li>✔️ HTML ו-CSS – לבניית מבנה המשחק ועיצוב הכרטיסים</li>
+            <li>
+              ✔️ JavaScript – לניהול הלוגיקה של המשחק, טיפול בהתאמות ובשליפת
+              התמונות
+            </li>
+            <li>✔️ SweetAlert2 – להצגת הודעות קופצות בסיום משחק</li>
+            <li>✔️ API של Unsplash – לשליפת תמונות חיות בזמן אמת</li>
+          </ul>
+
+          <div id="links">
+            <a href="../remember.html" target="_blank" rel="noopener noreferrer"
+              >לצפייה</a
+            >
+            <a href="../../zip/remember.zip" download="memoryGame">להורדה</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="copyright">
+      <h2>Tehila Nagar</h2>
+      <h3>כל הזכויות שמורות</h3>
+    </footer>
+  </body>
+</html>

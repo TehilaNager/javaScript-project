@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Suez+One&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./transitionPageTrivia.css" />
+    <script src="./transitionPageTrivia.js" defer></script>
+    <title>Trivia</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="hamburger">&#9776;</label>
+        <ul>
+          <li>
+            <a href="../../../index.html#theTitle">ראשי</a>
+          </li>
+          <li>
+            <a href="../../../index.html#aboutMe">אודות</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"
+              >גלריה <small>&#x25BC;</small></a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../../index.html#container-gallery-landing"
+                  >גלריית דפי נחיתה</a
+                >
+              </li>
+              <li>
+                <a href="../../../index.html#container-gallery-games"
+                  >גלריית משחקים</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../../index.html#contact">צור קשר</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="../../../index.html">
+        <div id="myName">Tehila Nagar</div>
+        <img src="images/profile-image.png" alt="profile-image" />
+      </a>
+    </header>
+
+    <main>
+      <div id="images">
+        <img src="images/img-CSS.png" alt="CSS" />
+        <img src="images/img-HTML.png" alt="HTML" />
+        <img src="images/img-JS.png" alt="Java Script" />
+        <img src="images/img-Bootstrap.png" alt="Bootstrap" />
+        <img src="images/img-API.png" alt="Api" />
+        <img
+          src="images/img-sweetAlert2.png"
+          alt="SweetAlert2"
+          style="padding: 15px"
+        />
+      </div>
+
+      <div class="container">
+        <img src="images/trivia.jpg" alt="trivia" class="image-game" />
+
+        <div class="description-game">
+          <h1>משחק טריוויה 🎯🧠</h1>
+          <p>
+            משחק טריוויה אינטראקטיבי וחווייתי שבו המשתמש בוחר קטגוריה, רמת קושי
+            וזמן לכל שאלה – ויוצא לענות על 10 שאלות אמריקאיות ברצף. מטרת המשחק
+            היא לצבור כמה שיותר נקודות על ידי בחירה בתשובות הנכונות.
+          </p>
+
+          <p>
+            המשחק כולל עיצוב רספונסיבי, טיימר מובנה, אפקטים קוליים ופופ־אפים עם
+            הוראות ותוצאה סופית – כל אלה יוצרים חוויית למידה אינטואיטיבית ומהנה.
+            למרות שהמשחק באנגלית, הוא ברור וקל להבנה גם לדוברי עברית, בזכות
+            ההנחיות החזותיות והקוליות והחיווי המיידי לתשובות נכונות או שגויות -
+            לחוויית למידה מהנה ואינטואיטיבית.
+          </p>
+
+          <p style="font-weight: bold; margin-top: 10px">
+            המשחק נבנה באמצעות הטכנולוגיות הבאות:
+          </p>
+          <ul>
+            <li>✔️ HTML ו-CSS – לבניית מבנה המשחק ועיצוב רספונסיבי</li>
+            <li>
+              ✔️ JavaScript – לניהול הלוגיקה, הטיימר, הניקוד וחוויית המשתמש
+            </li>
+            <li>✔️ Bootstrap – לעיצוב אלמנטים ולפריסת מבנה רספונסיבית</li>
+            <li>✔️ SweetAlert2 – להצגת חלונות קופצים ייחודיים</li>
+            <li>
+              ✔️ Open Trivia DB API – לשליפת שאלות בזמן אמת לפי בחירת המשתמש
+            </li>
+          </ul>
+
+          <div id="links">
+            <a
+              href="../html/trivia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >לצפייה</a
+            >
+            <a href="../../zip/trivia.zip" download="trivia">להורדה</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="copyright">
+      <h2>Tehila Nagar</h2>
+      <h3>כל הזכויות שמורות</h3>
+    </footer>
+  </body>
+</html>

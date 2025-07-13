@@ -1,0 +1,782 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  direction: rtl;
+  display: flex;
+  border-top: 3px solid #fb5fcc;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: #fff;
+  z-index: 500;
+}
+
+nav {
+  width: auto;
+  height: 80px;
+  margin-right: 150px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 2;
+  color: #000000;
+  font: normal normal normal 25px/37px Heebo;
+  width: auto;
+  height: 60px;
+  display: block;
+  padding: 20px 0;
+
+  padding: 20px 10px;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  color: #fb5fcc;
+  font-weight: bold;
+}
+
+nav ul li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  padding: 0.5em 1em;
+  display: block;
+  text-align: center;
+  white-space: normal;
+  word-break: normal;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+nav ul li.dropdown {
+  position: relative;
+}
+
+.hamburger {
+  color: #fb5fcc;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 25px;
+}
+
+#chk {
+  display: none;
+}
+
+#myName {
+  font-family: Satisfy;
+  color: #444444;
+  font-size: 25px;
+  display: block;
+  padding: 25px;
+  position: absolute;
+  left: 300px;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 245px;
+  top: 10px;
+}
+
+#theTitle {
+  height: 400px;
+  margin-top: 80px;
+  background-image: linear-gradient(#ff009d5b, #f7960f63),
+    url(images/header-background.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 400px;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#theTitle h1 {
+  font: normal normal 900 80px/118px Heebo;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+#theTitle p {
+  font: normal normal 600 20px/30px Heebo;
+  text-align: center;
+  color: #3a3a3a;
+  padding: 7px;
+}
+
+#images {
+  height: 120px;
+  display: flex;
+  padding: 15px 140px;
+  justify-content: space-between;
+  direction: rtl;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+#aboutMe {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#aboutMe h2 {
+  color: #3a3a3a;
+  font: normal normal 900 35px/52px Heebo;
+  text-align: center;
+  padding: 10px;
+}
+
+#aboutMe p {
+  color: #3a3a3a;
+  font: normal normal normal 20px/29px Heebo;
+  text-align: center;
+  padding: 10px 300px;
+  direction: rtl;
+}
+
+#aboutMe a {
+  width: 250px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #fb5fcc;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  cursor: pointer;
+  color: #3a3a3a;
+  text-align: center;
+  font: normal normal bold 20px/30px Heebo;
+  text-decoration: none;
+}
+
+.container-gallery {
+  background-color: #e7e5e5;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 100px 0px;
+  flex-wrap: wrap;
+}
+
+#container-gallery-landing {
+  background-color: #f6f6f6;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 35vw;
+}
+.title-gallery h2 {
+  color: #3a3a3a;
+  font: normal normal 900 36px/53px Heebo;
+  padding: 10px;
+}
+
+.title-gallery p {
+  color: #3a3a3a;
+  font: normal normal normal 20px/29px Heebo;
+  direction: rtl;
+  padding-bottom: 50px;
+}
+
+.gallery-landing {
+  gap: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  width: 75vw;
+  direction: rtl;
+  margin-bottom: 80px;
+}
+
+.gallery-games {
+  gap: 2.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 350px);
+  width: 65vw;
+  direction: rtl;
+}
+
+.title-game {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.image-game {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.game {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.image-game:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card h3 {
+  color: #3a3a3a;
+  text-align: center;
+  font: normal normal bold 23px/34px Heebo;
+}
+
+.card p {
+  color: #3a3a3a;
+  text-align: center;
+  font: normal normal normal 16px/24px Heebo;
+}
+
+.card a {
+  color: #2c2c2c;
+  background-color: #fb5fcc;
+  cursor: pointer;
+  text-align: center;
+  font: normal normal 17px/26px Heebo;
+  border-radius: 20px;
+  width: 170px;
+  height: 40px;
+  border: 0;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.card a:hover {
+  transform: scale(1.1);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  height: 300px;
+  width: 100%;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card :hover {
+  opacity: 0.7;
+}
+
+.image-game {
+  width: 100%;
+  border-radius: 30px;
+}
+#contact {
+  height: 850px;
+  background-color: #3a3a3a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  direction: rtl;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#contact img {
+  width: 700px;
+  height: 600px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 550px;
+}
+
+#contact form input {
+  width: 100%;
+  height: 50px;
+  border-bottom: 4px solid #fb5fcc;
+  font-family: Heebo;
+  font-size: 1rem;
+  padding: 7px;
+}
+
+#contact form input[type="submit"] {
+  background-color: #fb5fcc;
+  font: normal normal bold 22px/30px Heebo;
+  border-radius: 25px;
+  width: 33%;
+  border: 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#contact form textarea {
+  width: 100%;
+  height: 100px;
+  border-bottom: 4px solid #fb5fcc;
+  font-family: Heebo;
+  font-size: 1rem;
+  padding: 7px;
+  resize: none;
+}
+
+#contact form label {
+  font: normal normal bold 18px/24px Heebo;
+  cursor: pointer;
+}
+
+#phone {
+  direction: rtl;
+  padding: 7px;
+}
+
+.container-form {
+  color: #ffffff;
+  direction: rtl;
+  width: 570px;
+  height: 710px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 70px 70px;
+}
+.container-form h2 {
+  font: normal normal 900 38px/53px Heebo;
+}
+
+.container-form p {
+  font: normal normal normal 20px/29px Heebo;
+}
+
+.developmentTool {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.developmentTool img {
+  width: 50px;
+  height: 50px;
+}
+
+#theIcons {
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: #fb5fcc;
+  direction: rtl;
+  padding: 0 130px;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+.icon h3 {
+  text-align: center;
+  font: normal normal normal 20px/16px Helvetica Assistant;
+  color: #2c2c2c;
+}
+
+#copyright {
+  height: 45px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fb5fcc;
+  border-bottom: 4px solid #fb5fcc;
+}
+#copyright h2 {
+  text-align: left;
+  font: normal normal normal 20px/29px Assistant;
+  margin: 0 20px;
+}
+
+#copyright h3 {
+  text-align: right;
+  font: normal normal 300 20px/29px Assistant;
+  margin: 0 20px;
+}
+
+@media (max-width: 576px) {
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    margin-top: 60px;
+  }
+
+  nav ul {
+    display: none;
+    gap: 0;
+  }
+
+  nav ul li a {
+    line-height: 0;
+    font: normal normal normal 20px/37px Heebo;
+    width: 200px;
+    background-color: #fff;
+    display: block;
+    border-bottom: 1px solid #3a3a3a;
+  }
+
+  nav ul li a:hover {
+    transform: none;
+    color: #fb5fcc;
+  }
+
+  #chk:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: initial;
+  }
+
+  #myName {
+    display: none;
+  }
+
+  header img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+
+  #theTitle {
+    height: 330px;
+    background-size: cover;
+  }
+
+  #theTitle h1 {
+    font: normal normal 900 46px/67px Heebo;
+  }
+
+  #theTitle p {
+    font: normal normal medium 15px/25px Heebo;
+  }
+
+  #images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 35px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #images img {
+    width: 45px;
+    height: 45px;
+  }
+
+  #aboutMe a {
+    width: 170px;
+    height: 35px;
+    border-radius: 25px;
+    padding: 15px;
+    font: normal normal bold 15px/19px Heebo;
+  }
+
+  #aboutMe {
+    margin-top: 30px;
+    width: 100%;
+  }
+  #aboutMe h2 {
+    font: normal normal 900 25px/37px Heebo;
+    padding: 10px;
+  }
+
+  #aboutMe p {
+    text-align: center;
+    font: normal normal normal 15px/22px Heebo;
+    padding: 10px 35px;
+  }
+
+  #aboutMe button {
+    font: normal normal medium 10px/19px Heebo;
+    width: 135px;
+    height: 30px;
+    border-radius: 25px;
+    margin: 30px;
+  }
+
+  .container-gallery {
+    height: auto;
+    width: 100%;
+    padding: 50px 0;
+  }
+  .game {
+    padding-bottom: 10px;
+  }
+
+  .title-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 85%;
+  }
+  .title-gallery h2 {
+    font: normal normal 900 25px/37px Heebo;
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  .title-gallery p {
+    font: normal normal normal 15px/22px Heebo;
+    padding: 7px 0px;
+    padding-bottom: 30px;
+  }
+
+  .gallery-landing {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 500px);
+    gap: 2em;
+    width: 85vw;
+  }
+
+  .gallery-games {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 350px);
+    gap: 2em;
+    width: 85vw;
+  }
+
+  #theTitle,
+  #images,
+  #contact,
+  #copyright,
+  #theIcons {
+    width: 100%;
+  }
+
+  #contact {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 725px;
+    margin: 0 auto;
+  }
+
+  #contact img {
+    width: 185px;
+    height: 161px;
+    order: 1;
+    margin-right: 170px;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 325px;
+    width: 80vw;
+    margin: 20px auto;
+  }
+
+  #contact form input {
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #fb5fcc;
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  #contact form input[type="submit"] {
+    font: normal normal bold 14px/16px Heebo;
+    width: 38%;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  #contact form textarea {
+    width: 100%;
+    height: 57px;
+    border-bottom: 2px solid #fb5fcc;
+    font-family: Heebo;
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  #contact form label {
+    font: normal normal bold 12px/18px Heebo;
+  }
+
+  .container-form {
+    width: 80vw;
+    height: 750px;
+    margin: 0px 50px;
+    margin-bottom: 70px;
+    order: 2;
+  }
+  .container-form h2 {
+    font: normal normal 900 25px/37px Heebo;
+  }
+
+  .container-form p {
+    font: normal normal normal 15px/22px Heebo;
+  }
+
+  #phone {
+    padding: 5px;
+  }
+
+  .developmentTool {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .developmentTool img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #theIcons {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    direction: rtl;
+    padding: 50px 130px;
+    gap: 2em;
+  }
+
+  .icon img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
+
+  .icon h3 {
+    font: normal normal normal 17px/17px Helvetica Neue;
+  }
+
+  #copyright {
+    height: 28px;
+    border-bottom: 5px solid #fb5fcc;
+  }
+  #copyright h2 {
+    font: normal normal normal 9px/13px Heebo;
+    margin: 0 10px;
+  }
+
+  #copyright h3 {
+    font: normal normal 300 9px/13px Heebo;
+    margin: 0 10px;
+  }
+}

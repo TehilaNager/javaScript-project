@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tic-tac-toe.css" />
+    <script src="tic-tac-toe.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Tic Tac Toe</title>
+  </head>
+
+  <body>
+    <div class="layout-container">
+      <div class="title-side">
+        <h1 class="big-title">Tic Tac Toe</h1>
+      </div>
+
+      <div class="game-container">
+        <img src="./images/volume-up-fill.svg" alt="audio" id="audio" />
+
+        <div id="board">
+          <div class="cell" data="0"></div>
+          <div class="cell" data="1"></div>
+          <div class="cell" data="2"></div>
+          <div class="cell" data="3"></div>
+          <div class="cell" data="4"></div>
+          <div class="cell" data="5"></div>
+          <div class="cell" data="6"></div>
+          <div class="cell" data="7"></div>
+          <div class="cell" data="8"></div>
+        </div>
+
+        <div class="info">
+          <button class="reset" id="resetGame">Reset Game</button>
+          <button class="reset" id="resetScoreBtn">Reset Score</button>
+          <div id="scoreAndStatus">
+            <div class="winning-board">
+              <p>Score Board:</p>
+              <p id="xWins">
+                X Wins: <span id="xState" style="color: black"></span>
+              </p>
+              <p id="oWins">
+                O Wins: <span id="oState" style="color: black"></span>
+              </p>
+            </div>
+          
+            <div id="status"></div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
