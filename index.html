@@ -12,6 +12,9 @@
       rel="stylesheet"
     />
     <script src="index.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/joi@17.9.2/dist/joi-browser.min.js"></script>
+
     <title>תהילה נגר - תיק עבודות</title>
   </head>
 
@@ -324,16 +327,16 @@
 
         <form>
           <div>
-            <label for="name">שם מלא</label>
-            <input type="text" placeholder="שם מלא" id="name" />
+            <label for="name"><span style="color: red">*</span> שם מלא</label>
+            <input type="text" placeholder="שם מלא" id="name" required />
           </div>
           <div>
-            <label for="email">דוא״ל</label>
-            <input type="email" placeholder="דוא״ל" id="email" />
+            <label for="email"><span style="color: red">*</span> דוא״ל</label>
+            <input type="email" placeholder="דוא״ל" id="email" required />
           </div>
           <div>
-            <label for="phone">טלפון</label>
-            <input type="tel" placeholder="טלפון" id="phone" />
+            <label for="phone"><span style="color: red">*</span> טלפון</label>
+            <input type="tel" placeholder="טלפון" id="phone" required />
           </div>
           <div>
             <label for="textarea">תוכן ההודעה</label>
