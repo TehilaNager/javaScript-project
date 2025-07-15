@@ -13,6 +13,11 @@ The site serves as a digital business card and presents 6 smart projects, each w
 **This project is a continuation and enhancement of a previous personal portfolio site that was built using only HTML and CSS.**  
 In this version, JavaScript was integrated to create a more dynamic and interactive experience, improving functionality and user engagement.
 
+> 💡 **Note about the "Super Online" project:**  
+> The Super Online project was created for learning and demonstration purposes.  
+> All store details such as **address**, **phone number**, and **opening hours** are fictional and were made up as part of the project design.  
+> There is no real supermarket associated with this project.
+
 ---
 
 ## Project Goals
@@ -58,7 +63,7 @@ In this version, JavaScript was integrated to create a more dynamic and interact
 
 ## How to Run
 
-1. Clone the repository:  git clone https://github.com/TehilaNager/javaScript-project.git
+1. Clone the repository:  `git clone https://github.com/TehilaNager/javaScript-project.git`  
 2. Open the `index.html` file in a modern web browser.  
 3. Use the projects gallery to navigate to individual project pages.  
 4. View each project or download its files from the project page.  
